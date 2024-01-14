@@ -1,0 +1,124 @@
+additional_feature_files: None
+batch_size: 256
+cache_validation_data: true
+checkpoint_path: None
+clip_gradient_norm: 1
+clip_targets_to_zero:
+- flow
+commit_hash:
+#data_dir: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/data_dir
+data_dir: C:/Users/Logan/Desktop/AGU_lstm_models/data_dir
+dataset: generic
+device: cuda:0
+dynamic_inputs:
+- pr
+- tmmn
+- tmmx
+- srad
+- rmin
+- rmax
+- sph
+- vs
+- etr
+dynamics_embedding:
+  type: fc
+  hiddens:
+  - 30
+  - 20
+  - 64
+  activation: tanh
+  dropout: 0.0
+epochs: 30
+evolving_attributes:
+experiment_name: AGU_development_run
+forcings: time_series
+head: regression
+hidden_size: 256
+#img_log_dir: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/runs/AGU_development_run_0612_194636/img_log
+img_log_dir: C:/Users/Logan/Desktop/AGU_lstm_models/runs/AGU_development_run_0612_194636/img_log
+initial_forget_bias: 3
+learning_rate:
+  0: 0.001
+  10: 0.0005
+  25: 0.0001
+log_interval: 5
+log_tensorboard: true
+loss: MSE
+metrics:
+- NSE
+- KGE
+- Alpha-NSE
+- Beta-NSE
+- RMSE
+model: cudalstm
+num_workers: 8
+number_of_basins: 96
+optimizer: Adam
+output_activation: linear
+output_dropout: 0.4
+package_version: 1.8.0
+per_basin_test_periods_file: None
+per_basin_train_periods_file: None
+per_basin_validation_periods_file: None
+predict_last_n: 1
+regularization:
+#run_dir: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/runs/AGU_development_run_0612_194636
+run_dir: C:/Users/Logan/Desktop/AGU_lstm_models/runs/AGU_development_run_0612_194636
+save_train_data: false
+save_validation_results: false
+save_weights_every: 1
+seed: 54
+seq_length: 365
+static_attributes:
+- drainage_area
+- elevation
+- average_precip
+- average_refET
+- aridity
+- depletion_time
+- crops
+- grassland
+- pasture
+- open_water
+- urban
+- forest
+- other
+- carbonate
+- non_carbonate
+- eolian_sediment_coarse
+- eolian_sediment_fine
+- glacial_till_loam
+- glacial_till_coarse
+- colluvial_sediment
+- extrusive_volcanic
+- saline_lake_sediment
+- coastal_sediment_fine
+- silicic_residual
+statics_embedding:
+  type: fc
+  hiddens:
+  - 30
+  - 20
+  - 64
+  activation: tanh
+  dropout: 0.0
+target_variables:
+- flow
+#test_basin_file: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/data_dir/basins.txt
+test_basin_file: C:/Users/Logan/Desktop/AGU_lstm_models/data_dir/basins.txt
+test_end_date: 30/09/2023
+test_start_date: 01/10/2015
+#train_basin_file: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/data_dir/basins.txt
+train_basin_file: C:/Users/Logan/Desktop/AGU_lstm_models/data_dir/basins.txt
+train_data_file: None
+#train_dir: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/runs/AGU_development_run_0612_194636/train_data
+train_dir: C:/Users/Logan/Desktop/AGU_lstm_models/runs/AGU_development_run_0612_194636/train_data
+train_end_date: 30/09/2005
+train_start_date: 01/10/1979
+use_basin_id_encoding: true
+validate_every: 1
+validate_n_random_basins: 96
+#validation_basin_file: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/data_dir/basins.txt
+validation_basin_file: C:/Users/Logan/Desktop/AGU_lstm_models/data_dir/basins.txt
+validation_end_date: 30/09/2015
+validation_start_date: 01/10/2005

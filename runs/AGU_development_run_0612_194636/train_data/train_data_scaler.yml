@@ -1,0 +1,140 @@
+attribute_means:
+  aridity: 0.2866582918692894
+  average_precip: 529.9686898148149
+  average_refET: 1876.3595069444448
+  carbonate: 0.0009102604980849395
+  coastal_sediment_fine: 0.1424936699744326
+  colluvial_sediment: 0.08478609818364595
+  crops: 0.3906899919606858
+  depletion_time: 1530.0544052124023
+  drainage_area: 10922.28125
+  elevation: 704.8854166666666
+  eolian_sediment_coarse: 0.28602641595451506
+  eolian_sediment_fine: 0.27156091935054744
+  extrusive_volcanic: 0.00016814185828571877
+  forest: 0.027107856364273954
+  glacial_till_coarse: 0.0016374590624458729
+  glacial_till_loam: 0.0008621353339925698
+  grassland: 0.4585463348492158
+  non_carbonate: 0.18013945028292142
+  open_water: 0.003339871569073541
+  other: 0.09013108791618106
+  pasture: 0.012519944623550954
+  saline_lake_sediment: 2.4897422777542282e-06
+  silicic_residual: 0.03055845823031633
+  urban: 0.017664912717018717
+attribute_stds:
+  aridity: 0.06733105260385136
+  average_precip: 101.37757473270328
+  average_refET: 211.66607413484488
+  carbonate: 0.0031267554138160445
+  coastal_sediment_fine: 0.19383411768993064
+  colluvial_sediment: 0.13487960621573206
+  crops: 0.2590931604576367
+  depletion_time: 1118.1114317535819
+  drainage_area: 26125.334704963716
+  elevation: 236.98211657119063
+  eolian_sediment_coarse: 0.291235573107116
+  eolian_sediment_fine: 0.2673417629295033
+  extrusive_volcanic: 0.0010026733246253378
+  forest: 0.04532109260016749
+  glacial_till_coarse: 0.0040532193136101815
+  glacial_till_loam: 0.008447166630022996
+  grassland: 0.22466098331279774
+  non_carbonate: 0.22687939816908545
+  open_water: 0.003825523766970528
+  other: 0.14589314627694555
+  pasture: 0.013355246950447276
+  saline_lake_sediment: 2.4394392686130433e-05
+  silicic_residual: 0.0625862691708992
+  urban: 0.020533693687808753
+xarray_feature_scale:
+  coords: {}
+  attrs: {}
+  dims: {}
+  data_vars:
+    etr:
+      dims: []
+      attrs: {}
+      data: 3.0438289642333984
+    flow:
+      dims: []
+      attrs: {}
+      data: 26.574295043945312
+    pr:
+      dims: []
+      attrs: {}
+      data: 3.8685052394866943
+    rmax:
+      dims: []
+      attrs: {}
+      data: 13.672797203063965
+    rmin:
+      dims: []
+      attrs: {}
+      data: 12.564203262329102
+    sph:
+      dims: []
+      attrs: {}
+      data: 0.0051743583753705025
+    srad:
+      dims: []
+      attrs: {}
+      data: 81.50342559814453
+    tmmn:
+      dims: []
+      attrs: {}
+      data: 10.265547752380371
+    tmmx:
+      dims: []
+      attrs: {}
+      data: 11.440038681030273
+    vs:
+      dims: []
+      attrs: {}
+      data: 1.450108289718628
+xarray_feature_center:
+  coords: {}
+  attrs: {}
+  dims: {}
+  data_vars:
+    etr:
+      dims: []
+      attrs: {}
+      data: 5.104114532470703
+    flow:
+      dims: []
+      attrs: {}
+      data: 9.029271125793457
+    pr:
+      dims: []
+      attrs: {}
+      data: 1.4557040929794312
+    rmax:
+      dims: []
+      attrs: {}
+      data: 86.63409423828125
+    rmin:
+      dims: []
+      attrs: {}
+      data: 32.69347381591797
+    sph:
+      dims: []
+      attrs: {}
+      data: 0.00464171776548028
+    srad:
+      dims: []
+      attrs: {}
+      data: 191.9877166748047
+    tmmn:
+      dims: []
+      attrs: {}
+      data: 275.8863830566406
+    tmmx:
+      dims: []
+      attrs: {}
+      data: 290.9072265625
+    vs:
+      dims: []
+      attrs: {}
+      data: 4.237396240234375

@@ -1,0 +1,127 @@
+2023-12-06 19:46:36,812: Logging to /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/runs/AGU_development_run_0612_194636/output.log initialized.
+2023-12-06 19:46:36,813: ### Folder structure created at /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/runs/AGU_development_run_0612_194636
+2023-12-06 19:46:36,814: ### Run configurations for AGU_development_run
+2023-12-06 19:46:36,814: experiment_name: AGU_development_run
+2023-12-06 19:46:36,814: run_dir: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/runs/AGU_development_run_0612_194636
+2023-12-06 19:46:36,814: train_basin_file: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/data_dir/basins.txt
+2023-12-06 19:46:36,814: validation_basin_file: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/data_dir/basins.txt
+2023-12-06 19:46:36,814: test_basin_file: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/data_dir/basins.txt
+2023-12-06 19:46:36,814: train_start_date: 1979-10-01 00:00:00
+2023-12-06 19:46:36,814: train_end_date: 2005-09-30 00:00:00
+2023-12-06 19:46:36,815: validation_start_date: 2005-10-01 00:00:00
+2023-12-06 19:46:36,815: validation_end_date: 2015-09-30 00:00:00
+2023-12-06 19:46:36,815: test_start_date: 2015-10-01 00:00:00
+2023-12-06 19:46:36,815: test_end_date: 2023-09-30 00:00:00
+2023-12-06 19:46:36,815: per_basin_train_periods_file: None
+2023-12-06 19:46:36,815: per_basin_validation_periods_file: None
+2023-12-06 19:46:36,815: per_basin_test_periods_file: None
+2023-12-06 19:46:36,815: seed: 54
+2023-12-06 19:46:36,815: device: cuda:0
+2023-12-06 19:46:36,815: validate_every: 1
+2023-12-06 19:46:36,815: validate_n_random_basins: 96
+2023-12-06 19:46:36,816: cache_validation_data: True
+2023-12-06 19:46:36,816: metrics: ['NSE', 'KGE', 'Alpha-NSE', 'Beta-NSE', 'RMSE']
+2023-12-06 19:46:36,816: model: cudalstm
+2023-12-06 19:46:36,816: checkpoint_path: None
+2023-12-06 19:46:36,816: head: regression
+2023-12-06 19:46:36,816: output_activation: linear
+2023-12-06 19:46:36,816: statics_embedding: {'type': 'fc', 'hiddens': [30, 20, 64], 'activation': 'tanh', 'dropout': 0.0}
+2023-12-06 19:46:36,816: dynamics_embedding: {'type': 'fc', 'hiddens': [30, 20, 64], 'activation': 'tanh', 'dropout': 0.0}
+2023-12-06 19:46:36,816: hidden_size: 256
+2023-12-06 19:46:36,816: initial_forget_bias: 3
+2023-12-06 19:46:36,817: output_dropout: 0.4
+2023-12-06 19:46:36,817: optimizer: Adam
+2023-12-06 19:46:36,817: loss: MSE
+2023-12-06 19:46:36,817: regularization: None
+2023-12-06 19:46:36,817: learning_rate: {0: 0.001, 10: 0.0005, 25: 0.0001}
+2023-12-06 19:46:36,817: batch_size: 256
+2023-12-06 19:46:36,817: epochs: 30
+2023-12-06 19:46:36,817: clip_gradient_norm: 1
+2023-12-06 19:46:36,817: predict_last_n: 1
+2023-12-06 19:46:36,817: seq_length: 365
+2023-12-06 19:46:36,817: num_workers: 8
+2023-12-06 19:46:36,817: log_interval: 5
+2023-12-06 19:46:36,818: log_tensorboard: True
+2023-12-06 19:46:36,818: save_weights_every: 1
+2023-12-06 19:46:36,818: save_validation_results: False
+2023-12-06 19:46:36,818: dataset: generic
+2023-12-06 19:46:36,818: data_dir: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/data_dir
+2023-12-06 19:46:36,818: save_train_data: False
+2023-12-06 19:46:36,818: train_data_file: None
+2023-12-06 19:46:36,818: forcings: time_series
+2023-12-06 19:46:36,818: dynamic_inputs: ['pr', 'tmmn', 'tmmx', 'srad', 'rmin', 'rmax', 'sph', 'vs', 'etr']
+2023-12-06 19:46:36,818: target_variables: ['flow']
+2023-12-06 19:46:36,818: clip_targets_to_zero: ['flow']
+2023-12-06 19:46:36,819: static_attributes: ['drainage_area', 'elevation', 'average_precip', 'average_refET', 'aridity', 'depletion_time', 'crops', 'grassland', 'pasture', 'open_water', 'urban', 'forest', 'other', 'carbonate', 'non_carbonate', 'eolian_sediment_coarse', 'eolian_sediment_fine', 'glacial_till_loam', 'glacial_till_coarse', 'colluvial_sediment', 'extrusive_volcanic', 'saline_lake_sediment', 'coastal_sediment_fine', 'silicic_residual']
+2023-12-06 19:46:36,819: additional_feature_files: None
+2023-12-06 19:46:36,819: evolving_attributes: None
+2023-12-06 19:46:36,819: use_basin_id_encoding: True
+2023-12-06 19:46:36,819: number_of_basins: 96
+2023-12-06 19:46:36,819: train_dir: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/runs/AGU_development_run_0612_194636/train_data
+2023-12-06 19:46:36,819: img_log_dir: /panfs/pfs.local/work/water/l974s360/AGU_lstm_models/runs/AGU_development_run_0612_194636/img_log
+2023-12-06 19:46:36,839: ### Device cuda:0 will be used for training
+2023-12-06 19:46:37,037: Loading basin data into xarray data set.
+2023-12-06 19:47:13,778: Create lookup table and convert to pytorch tensor
+2023-12-06 19:47:27,140: These basins do not have a single valid sample in the train period: ['06785500']
+2023-12-06 19:49:42,144: Epoch 1 average loss: avg_loss: 0.18055, avg_total_loss: 0.18055
+2023-12-06 19:50:19,237: Epoch 1 average validation loss: 0.24063 -- Median validation metrics: avg_loss: 0.24063, NSE: -0.28148, KGE: -0.75442, Alpha-NSE: 0.60379, Beta-NSE: 0.53486, RMSE: 3.19808
+2023-12-06 19:52:08,303: Epoch 2 average loss: avg_loss: 0.11418, avg_total_loss: 0.11418
+2023-12-06 19:52:39,996: Epoch 2 average validation loss: 0.23616 -- Median validation metrics: avg_loss: 0.23616, NSE: -0.10880, KGE: 0.00690, Alpha-NSE: 0.73272, Beta-NSE: 0.19006, RMSE: 2.89718
+2023-12-06 19:54:30,142: Epoch 3 average loss: avg_loss: 0.09718, avg_total_loss: 0.09718
+2023-12-06 19:55:00,530: Epoch 3 average validation loss: 0.20947 -- Median validation metrics: avg_loss: 0.20947, NSE: -0.29376, KGE: -0.45290, Alpha-NSE: 0.71323, Beta-NSE: 0.45432, RMSE: 3.27323
+2023-12-06 19:56:52,405: Epoch 4 average loss: avg_loss: 0.08422, avg_total_loss: 0.08422
+2023-12-06 19:57:23,025: Epoch 4 average validation loss: 0.22547 -- Median validation metrics: avg_loss: 0.22547, NSE: 0.05831, KGE: 0.21541, Alpha-NSE: 0.73749, Beta-NSE: -0.04009, RMSE: 2.98338
+2023-12-06 19:59:14,703: Epoch 5 average loss: avg_loss: 0.07714, avg_total_loss: 0.07714
+2023-12-06 19:59:45,385: Epoch 5 average validation loss: 0.20826 -- Median validation metrics: avg_loss: 0.20826, NSE: -0.06336, KGE: -0.16599, Alpha-NSE: 0.73351, Beta-NSE: 0.31917, RMSE: 2.85706
+2023-12-06 20:01:37,553: Epoch 6 average loss: avg_loss: 0.06805, avg_total_loss: 0.06805
+2023-12-06 20:02:12,262: Epoch 6 average validation loss: 0.20496 -- Median validation metrics: avg_loss: 0.20496, NSE: 0.03071, KGE: 0.15699, Alpha-NSE: 0.71162, Beta-NSE: 0.09192, RMSE: 2.68380
+2023-12-06 20:04:05,447: Epoch 7 average loss: avg_loss: 0.06445, avg_total_loss: 0.06445
+2023-12-06 20:04:36,542: Epoch 7 average validation loss: 0.21685 -- Median validation metrics: avg_loss: 0.21685, NSE: -0.22550, KGE: 0.03372, Alpha-NSE: 0.81455, Beta-NSE: 0.25278, RMSE: 3.10381
+2023-12-06 20:06:27,294: Epoch 8 average loss: avg_loss: 0.05896, avg_total_loss: 0.05896
+2023-12-06 20:06:58,817: Epoch 8 average validation loss: 0.21917 -- Median validation metrics: avg_loss: 0.21917, NSE: -0.06961, KGE: 0.04925, Alpha-NSE: 0.86015, Beta-NSE: 0.19066, RMSE: 2.99692
+2023-12-06 20:08:50,117: Epoch 9 average loss: avg_loss: 0.05526, avg_total_loss: 0.05526
+2023-12-06 20:09:22,148: Epoch 9 average validation loss: 0.20299 -- Median validation metrics: avg_loss: 0.20299, NSE: 0.00043, KGE: 0.24360, Alpha-NSE: 0.80705, Beta-NSE: 0.01844, RMSE: 3.13997
+2023-12-06 20:09:22,148: Setting learning rate to 0.0005
+2023-12-06 20:11:14,196: Epoch 10 average loss: avg_loss: 0.04450, avg_total_loss: 0.04450
+2023-12-06 20:11:44,800: Epoch 10 average validation loss: 0.21056 -- Median validation metrics: avg_loss: 0.21056, NSE: 0.04318, KGE: 0.22500, Alpha-NSE: 0.80368, Beta-NSE: -0.01067, RMSE: 2.79577
+2023-12-06 20:13:36,739: Epoch 11 average loss: avg_loss: 0.03948, avg_total_loss: 0.03948
+2023-12-06 20:14:08,142: Epoch 11 average validation loss: 0.21548 -- Median validation metrics: avg_loss: 0.21548, NSE: -0.01377, KGE: 0.10378, Alpha-NSE: 0.81467, Beta-NSE: 0.15401, RMSE: 2.99513
+2023-12-06 20:16:00,668: Epoch 12 average loss: avg_loss: 0.03722, avg_total_loss: 0.03722
+2023-12-06 20:16:31,481: Epoch 12 average validation loss: 0.20844 -- Median validation metrics: avg_loss: 0.20844, NSE: -0.07201, KGE: 0.18803, Alpha-NSE: 0.91259, Beta-NSE: 0.10901, RMSE: 3.05137
+2023-12-06 20:18:25,622: Epoch 13 average loss: avg_loss: 0.03539, avg_total_loss: 0.03539
+2023-12-06 20:18:56,313: Epoch 13 average validation loss: 0.20696 -- Median validation metrics: avg_loss: 0.20696, NSE: -0.00994, KGE: 0.03612, Alpha-NSE: 0.72898, Beta-NSE: 0.21506, RMSE: 2.78828
+2023-12-06 20:20:48,850: Epoch 14 average loss: avg_loss: 0.03398, avg_total_loss: 0.03398
+2023-12-06 20:21:20,179: Epoch 14 average validation loss: 0.21156 -- Median validation metrics: avg_loss: 0.21156, NSE: 0.11351, KGE: 0.20142, Alpha-NSE: 0.61791, Beta-NSE: 0.00862, RMSE: 2.68830
+2023-12-06 20:23:11,424: Epoch 15 average loss: avg_loss: 0.03251, avg_total_loss: 0.03251
+2023-12-06 20:23:43,287: Epoch 15 average validation loss: 0.20663 -- Median validation metrics: avg_loss: 0.20663, NSE: 0.06945, KGE: 0.09776, Alpha-NSE: 0.70603, Beta-NSE: 0.18658, RMSE: 2.71075
+2023-12-06 20:25:35,643: Epoch 16 average loss: avg_loss: 0.03153, avg_total_loss: 0.03153
+2023-12-06 20:26:08,509: Epoch 16 average validation loss: 0.20928 -- Median validation metrics: avg_loss: 0.20928, NSE: 0.03833, KGE: 0.07473, Alpha-NSE: 0.63646, Beta-NSE: 0.21855, RMSE: 2.64601
+2023-12-06 20:28:09,708: Epoch 17 average loss: avg_loss: 0.02988, avg_total_loss: 0.02988
+2023-12-06 20:28:41,722: Epoch 17 average validation loss: 0.21180 -- Median validation metrics: avg_loss: 0.21180, NSE: 0.12972, KGE: 0.22795, Alpha-NSE: 0.67029, Beta-NSE: -0.01444, RMSE: 2.56715
+2023-12-06 20:30:34,973: Epoch 18 average loss: avg_loss: 0.02914, avg_total_loss: 0.02914
+2023-12-06 20:31:05,876: Epoch 18 average validation loss: 0.21368 -- Median validation metrics: avg_loss: 0.21368, NSE: 0.14665, KGE: 0.25626, Alpha-NSE: 0.67417, Beta-NSE: -0.05565, RMSE: 2.49945
+2023-12-06 20:33:00,684: Epoch 19 average loss: avg_loss: 0.02839, avg_total_loss: 0.02839
+2023-12-06 20:33:31,668: Epoch 19 average validation loss: 0.20575 -- Median validation metrics: avg_loss: 0.20575, NSE: 0.07314, KGE: 0.14649, Alpha-NSE: 0.67479, Beta-NSE: 0.08404, RMSE: 2.66759
+2023-12-06 20:35:24,944: Epoch 20 average loss: avg_loss: 0.02773, avg_total_loss: 0.02773
+2023-12-06 20:35:56,022: Epoch 20 average validation loss: 0.20913 -- Median validation metrics: avg_loss: 0.20913, NSE: 0.14696, KGE: 0.24364, Alpha-NSE: 0.67918, Beta-NSE: -0.08465, RMSE: 2.56499
+2023-12-06 20:37:56,606: Epoch 21 average loss: avg_loss: 0.02702, avg_total_loss: 0.02702
+2023-12-06 20:38:29,014: Epoch 21 average validation loss: 0.20612 -- Median validation metrics: avg_loss: 0.20612, NSE: -0.08849, KGE: 0.13573, Alpha-NSE: 0.86684, Beta-NSE: 0.15678, RMSE: 3.16170
+2023-12-06 20:40:26,485: Epoch 22 average loss: avg_loss: 0.02616, avg_total_loss: 0.02616
+2023-12-06 20:40:57,864: Epoch 22 average validation loss: 0.21743 -- Median validation metrics: avg_loss: 0.21743, NSE: 0.00054, KGE: 0.17357, Alpha-NSE: 0.77713, Beta-NSE: 0.07133, RMSE: 2.78522
+2023-12-06 20:42:50,316: Epoch 23 average loss: avg_loss: 0.02548, avg_total_loss: 0.02548
+2023-12-06 20:43:24,433: Epoch 23 average validation loss: 0.21017 -- Median validation metrics: avg_loss: 0.21017, NSE: 0.07555, KGE: 0.24230, Alpha-NSE: 0.72851, Beta-NSE: -0.00124, RMSE: 2.63367
+2023-12-06 20:45:16,790: Epoch 24 average loss: avg_loss: 0.02464, avg_total_loss: 0.02464
+2023-12-06 20:45:47,627: Epoch 24 average validation loss: 0.21450 -- Median validation metrics: avg_loss: 0.21450, NSE: 0.02048, KGE: 0.25317, Alpha-NSE: 0.80676, Beta-NSE: -0.01892, RMSE: 3.16926
+2023-12-06 20:45:47,627: Setting learning rate to 0.0001
+2023-12-06 20:47:40,727: Epoch 25 average loss: avg_loss: 0.02077, avg_total_loss: 0.02077
+2023-12-06 20:48:11,856: Epoch 25 average validation loss: 0.21321 -- Median validation metrics: avg_loss: 0.21321, NSE: 0.06443, KGE: 0.19420, Alpha-NSE: 0.69170, Beta-NSE: 0.09846, RMSE: 2.73467
+2023-12-06 20:50:04,249: Epoch 26 average loss: avg_loss: 0.01924, avg_total_loss: 0.01924
+2023-12-06 20:50:35,352: Epoch 26 average validation loss: 0.20967 -- Median validation metrics: avg_loss: 0.20967, NSE: 0.08684, KGE: 0.20403, Alpha-NSE: 0.69512, Beta-NSE: 0.03559, RMSE: 2.75723
+2023-12-06 20:52:35,264: Epoch 27 average loss: avg_loss: 0.01891, avg_total_loss: 0.01891
+2023-12-06 20:53:07,286: Epoch 27 average validation loss: 0.20983 -- Median validation metrics: avg_loss: 0.20983, NSE: 0.03195, KGE: 0.22656, Alpha-NSE: 0.77293, Beta-NSE: 0.07395, RMSE: 2.88378
+2023-12-06 20:55:07,306: Epoch 28 average loss: avg_loss: 0.01822, avg_total_loss: 0.01822
+2023-12-06 20:55:38,239: Epoch 28 average validation loss: 0.21351 -- Median validation metrics: avg_loss: 0.21351, NSE: 0.06524, KGE: 0.24354, Alpha-NSE: 0.77826, Beta-NSE: 0.01811, RMSE: 2.82877
+2023-12-06 20:57:36,673: Epoch 29 average loss: avg_loss: 0.01797, avg_total_loss: 0.01797
+2023-12-06 20:58:07,594: Epoch 29 average validation loss: 0.21007 -- Median validation metrics: avg_loss: 0.21007, NSE: 0.05151, KGE: 0.21176, Alpha-NSE: 0.73773, Beta-NSE: 0.07667, RMSE: 2.78489
+2023-12-06 21:00:00,320: Epoch 30 average loss: avg_loss: 0.01801, avg_total_loss: 0.01801
+2023-12-06 21:00:30,754: Epoch 30 average validation loss: 0.21116 -- Median validation metrics: avg_loss: 0.21116, NSE: 0.00882, KGE: 0.19028, Alpha-NSE: 0.79141, Beta-NSE: 0.04949, RMSE: 3.00623
